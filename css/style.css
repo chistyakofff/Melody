@@ -2,8 +2,16 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -48,6 +56,7 @@ body {
     display: block;
     margin-bottom: 4px;
     color: white;
+    font-size: 14px;
 }
 
 .navbar-phone {
@@ -56,4 +65,110 @@ body {
     line-height: 20px;
     color: white;
     text-decoration: none;
+}
+
+.main-container {
+    min-width: 1280px;
+    display: flex;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.home-pic {
+    margin-top: 54px;
+    margin-bottom: 99px;
+    justify-content: start;
+}
+
+
+.footer {
+    background-color: #D7D7D7;
+    border-top: 4px solid #3596F5;
+}
+
+.footer-text,
+.footer-phone {
+    color: #635854;
+    display: block;
+    margin-left: 37px;
+    margin-right: 52px;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+.footer-phone {
+    font-weight: 700;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1280px;
+    height: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-politics {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+
+.politics-text {
+    margin-left: 20px;
+    color: #635854;
+}
+
+.footer-politics>a {
+    text-decoration-color: #635854;
+}
+
+.choose-floor {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.choose-text {
+    width: 332px;
+    height: 37px;
+    margin-top: 122px;
+    text-align: center;
+}
+
+.floor-list {
+    width: 74.91px;
+    height: 185.36px;
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-btn {
+    width: 257px;
+    height: 51px;
+    margin-top: 115.64px;
+}
+
+#choosed-floor {
+    visibility: hidden;
+}
+
+#select-floor {
+    margin:35px 0 35px 0;
+    font-size: 70px;
 }
